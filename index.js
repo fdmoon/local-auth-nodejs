@@ -28,5 +28,7 @@ app.use(flash());
 
 require('./app/routes.js')(app, passport);
 
+require('./config/passport')(passport);
+
 app.listen(port);
 console.log('The magic happens on ' + port);
